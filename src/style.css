@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "orpheus pro", serif;
+  }
+}
+
+@layer components {
+  details > summary {
+    list-style-type: "+";
+  }
+
+  details[open] > summary {
+    list-style-type: "-";
+  }
+}
+
+/*stroke {
+    -webkit-text-stroke: 2px white;
+  }*/
+
+.flip {
+  transform: rotate(-90deg);
+}
+
+.mymail {
+  animation: rotateMe 0.5s linear forwards;
+}
+
+/*.addFont {
+    font-family: "orpheuspro", serif;
+  
+  }*/
+.cirkle {
+  height: 200px;
+  width: 200px;
+}
+@media screen and (min-width: 900px) {
+  .cirkle {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+/*BANNER*/
+.addFont {
+  font-family: "Archivo", sans-serif;
+}
+
+.banner-inner {
+  animation: myBanner 20s linear infinite;
+  display: inline-block;
+  position: relative;
+}
+
+.banner-copy-before {
+  position: absolute;
+  right: calc(100% + 0.25em);
+}
+.banner-copy-after {
+  position: absolute;
+  left: calc(100% + 0.25em);
+}
+
+/*ANIMATIONS*/
+
+@keyframes rotateMe {
+  to {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: translateX(-45%);
+  }
+}
+
+@keyframes myBanner {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% - 0.25em));
+  }
+}
+
+/* cirkle absolute top-[400px] left-[20px] z-10 flex flex-col items-center justify-center rounded-full border-2 border-white bg-grey/80 md:left-[60px] lg:left-[80px] xl:left-[500px] */
