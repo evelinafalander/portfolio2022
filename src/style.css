@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    font-family: "orpheus pro", serif;
+    font-family: "archivo", sen-serif;
   }
 }
 
@@ -63,6 +63,17 @@
 .banner-copy-after {
   position: absolute;
   left: calc(100% + 0.25em);
+}
+/*FADE IN*/
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1.5s all ease;
+}
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 /*ANIMATIONS*/
