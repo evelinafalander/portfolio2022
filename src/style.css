@@ -21,6 +21,9 @@
 /*stroke {
     -webkit-text-stroke: 2px white;
   }*/
+html {
+  scroll-behavior: smooth;
+}
 
 .flip {
   transform: rotate(90deg);
@@ -40,8 +43,8 @@
 }
 @media screen and (min-width: 900px) {
   .cirkle {
-    height: 300px;
-    width: 300px;
+    height: 350px;
+    width: 350px;
   }
 }
 /*e-mail color change*/
@@ -51,11 +54,47 @@ body {
 #aboutMe {
   background-color: #654b96;
 }
-.dark-color {
+#myMail {
+  top: 30px;
+}
+/*.dark-color {
   color: #654b96;
 }
 .light-color {
   color: #cdff7c;
+}
+.invertEmail {
+  mix-blend-mode: difference;
+}*/
+.midnightHeader.default {
+  color: #654b96;
+}
+.midnightHeader.greenText {
+  color: #cdff7c;
+}
+
+.animate-charcter {
+  background-image: linear-gradient(
+    -225deg,
+    #654b96 0%,
+    #cdff7c 29%,
+    #853bd4 67%,
+    #cdff7c 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 4s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
 
 /*BANNER*/
@@ -108,5 +147,3 @@ body {
     transform: translateX(calc(-100% - 0.25em));
   }
 }
-
-/* cirkle absolute top-[400px] left-[20px] z-10 flex flex-col items-center justify-center rounded-full border-2 border-white bg-grey/80 md:left-[60px] lg:left-[80px] xl:left-[500px] */

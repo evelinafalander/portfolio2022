@@ -21,6 +21,7 @@
     "vite": "^3.0.0"
   },
   "dependencies": {
+    "midnight.js": "^1.1.1",
     "motion": "^10.14.2"
   }
 }

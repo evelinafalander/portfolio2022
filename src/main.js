@@ -22,6 +22,14 @@ reveal();
 
 /*change color (my-email)*/
 
+// Start midnight
+$(document).ready(function () {
+  // Change this to the correct selector for your nav.
+  $(".email").midnight();
+});
+
+// Start midnight
+
 /*$(document).ready(function () {
   adaptColor(".myemail");
 });

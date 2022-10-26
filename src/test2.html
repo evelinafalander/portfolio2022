@@ -2,10 +2,25 @@
 <html lang="en">
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/midnight.js/1.1.2/midnight.jquery.min.js"
+      integrity="sha512-HBpmapTfXXgSfklOnaazgJ2beseE3PbyTzIZUinZAnL4KZphZ0ZI5+IsfwQ7XZaMepcUJlN6LNh/31r45BujEA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>evelina falander</title>
+    <meta
+      name="description"
+      content="Portfolio by a digital design student currently applying for internships, containing an about me section and a selected projects section. "
+    />
+    <meta
+      name="keywords"
+      content="portfolio, kea, digital design, internship, intern, Københavns Erhvervsakademi"
+    />
     <link rel="icon" type="image/x-icon" href="svg/lila-e.svg" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,10 +36,10 @@
     <header>
       <div
         id="myMail"
-        class="myemail fixed top-[10px] right-[10px] z-30 text-right xl:right-[20px] xl:top-[20px] xl:text-lg"
+        class="email fixed top-[10px] right-[10px] z-30 text-right text-green xl:right-[20px] xl:top-[20px] xl:text-lg"
       >
         <a
-          class="text-purple underline"
+          class="underline"
           href="mailto:evelina.falander@gmail.com"
           target="_blank"
         >
@@ -33,25 +48,27 @@
         <p>tel. +46 725127411</p>
       </div>
       <div
-        class="flip fixed top-[160px] -right-[90px] z-30 text-right xl:top-[175px] xl:-right-[80px]"
+        class="flip email fixed top-[270px] -right-[109px] z-30 px-2 text-right xl:top-[204px] xl:-right-[114px] xl:text-lg"
       >
-        Currently looking for internship
+        Currently looking for an
+        <span class="animate-charcter">internship</span>
       </div>
     </header>
     <main>
       <!---HERO SECTION-->
-      <section
-        class="sticky top-0 grid grid-cols-3 pb-36 pt-32 lg:pl-20 xl:grid-cols-3 xl:pt-44"
-      >
+      <section class="sticky top-0 grid grid-cols-3 pb-36 pt-32">
         <div
-          class="addFont z-10 col-start-1 col-end-3 row-start-1 pt-16 pl-6 text-5xl tracking-wider text-green xl:col-start-2 xl:row-start-1 xl:flex xl:gap-10 xl:justify-self-end xl:pt-0 xl:text-6xl"
+          class="addFont z-10 col-start-1 col-end-3 row-start-1 pt-16 pl-6 text-5xl tracking-wider xl:col-end-2 xl:pl-0 xl:pt-0"
         >
-          <h2 class="pb-1 uppercase xl:pb-0">Digital</h2>
-          <h2 class="uppercase">Design</h2>
-          <h2>STUDENT</h2>
+          <div class="xl:flex xl:gap-5 xl:pl-6">
+            <h2 class="pb-1 uppercase">Digital</h2>
+            <h2 class="uppercase">Design(er)</h2>
+          </div>
+          <h2 class="text-end text-green">/student</h2>
         </div>
+
         <video
-          class="col-start-2 col-end-4 row-start-1 w-[90%] md:w-[60%] xl:col-end-3 xl:row-start-2 xl:mb-0 xl:w-[100%]"
+          class="col-start-2 col-end-4 row-start-1 w-[90%] xl:col-end-3"
           autoplay
           muted
           loop
@@ -60,7 +77,7 @@
         </video>
 
         <div
-          class="cirkle z-10 col-start-1 row-start-1 mt-60 ml-5 flex flex-col items-center justify-center self-end rounded-full border-2 border-white bg-grey/80 md:ml-10 lg:ml-20 xl:col-start-3 xl:row-start-2 xl:ml-0 xl:self-start"
+          class="cirkle z-10 col-start-1 row-start-1 mt-60 ml-5 flex flex-col items-center justify-center self-end rounded-full border-2 border-white bg-grey/80 xl:col-span-3 xl:col-start-2 xl:mt-48 xl:ml-72 xl:text-lg xxl:ml-96"
         >
           <a class="underline hover:text-purple" href="#aboutMe">About me</a>
           <a class="underline hover:text-purple" href="#myProjects"
@@ -69,9 +86,13 @@
         </div>
       </section>
 
-      <!---ABOUT ME-->
       <div class="relative z-20">
-        <section id="aboutMe" class="overflow-hidden pt-10 xl:pt-24">
+        <!---ABOUT ME-->
+        <section
+          id="aboutMe"
+          class="overflow-hidden pt-10 xl:pt-24"
+          data-midnight="greentText"
+        >
           <!--banner-->
           <div class="text-7xl font-light text-green">
             <div class="banner-inner whitespace-nowrap">
@@ -89,7 +110,7 @@
           </div>
 
           <article
-            class="px-12 pt-10 pb-16 text-white md:px-20 xl:grid xl:grid-cols-2 xl:py-24 xl:px-36 xxl:px-60"
+            class="px-12 pt-10 pb-16 font-light text-white md:px-20 xl:grid xl:grid-cols-2 xl:py-24 xl:px-36 xxl:px-60"
           >
             <div class="border-2 border-white">
               <p class="p-5">
@@ -175,7 +196,7 @@
           </div>
         </section>
         <!--all projects-->
-        <section class="bg-grey px-12 md:px-20 xl:px-36">
+        <section class="bg-grey px-12 font-light md:px-20 xl:px-36">
           <!--vildskud-->
           <article class="reveal pt-12 xl:grid xl:grid-cols-2 xl:pt-24">
             <div>
@@ -344,7 +365,7 @@
           </article>
         </section>
         <!--last part-->
-        <section class="grid grid-cols-2 bg-grey pt-20 xl:text-lg">
+        <section class="grid grid-cols-2 bg-grey pt-20 font-light xl:text-lg">
           <div class="border-r-2 border-white pr-2 text-end">
             <p>Want to see more of my work?</p>
             <a
