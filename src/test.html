@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,14 +17,14 @@
     <link rel="stylesheet" href="https://use.typekit.net/qcr4yut.css" />
     <link rel="stylesheet" href="https://use.typekit.net/qcr4yut.css" />
   </head>
-  <body class="cursor-mincursor bg-grey [&_a]:hover:cursor-hovercursor">
+  <body class="cursor-mincursor [&_a]:hover:cursor-hovercursor">
     <header>
       <div
         id="myMail"
-        class="fixed top-[10px] right-[10px] z-10 text-right text-purple xl:right-[20px] xl:top-[20px] xl:text-lg"
+        class="myemail fixed top-[10px] right-[10px] z-30 text-right xl:right-[20px] xl:top-[20px] xl:text-lg"
       >
         <a
-          class="underline hover:text-green"
+          class="underline"
           href="mailto:evelina.falander@gmail.com"
           target="_blank"
         >
@@ -31,312 +32,340 @@
         >
         <p>tel. +46 725127411</p>
       </div>
+      <div
+        class="flip fixed top-[160px] -right-[90px] z-30 text-right xl:top-[175px] xl:-right-[80px]"
+      >
+        Currently looking for internship
+      </div>
     </header>
     <main>
       <!---HERO SECTION-->
-      <section class="grid grid-cols-3 pb-36 pt-32 xl:grid-cols-3 xl:pt-44">
+      <section
+        class="sticky top-0 grid grid-cols-3 pb-36 pt-32 lg:pl-20 xl:grid-cols-3 xl:pt-44"
+      >
         <div
           class="addFont z-10 col-start-1 col-end-3 row-start-1 pt-16 pl-6 text-5xl tracking-wider text-green xl:col-start-2 xl:row-start-1 xl:flex xl:gap-10 xl:justify-self-end xl:pt-0 xl:text-6xl"
         >
           <h2 class="pb-1 uppercase xl:pb-0">Digital</h2>
-          <h2 class="uppercase">Designer</h2>
+          <h2 class="uppercase">Design</h2>
+          <h2>STUDENT</h2>
         </div>
         <video
-          class="col-start-2 col-end-4 row-start-1 mb-10 w-[90%] md:w-[60%] xl:col-end-3 xl:row-start-2 xl:mb-0 xl:w-[100%]"
+          class="col-start-2 col-end-4 row-start-1 w-[90%] md:w-[60%] xl:col-end-3 xl:row-start-2 xl:mb-0 xl:w-[100%]"
           autoplay
           muted
           loop
         >
-          <source src="img/video.mp4" type="video/mp4" />
+          <source src="img/new-video.mp4" type="video/mp4" />
         </video>
 
         <div
-          class="cirkle z-10 col-start-1 row-start-1 ml-5 flex flex-col items-center justify-center self-end rounded-full border-2 border-white bg-grey/80 md:ml-10 lg:ml-20 xl:col-start-3 xl:row-start-2 xl:ml-0"
+          class="cirkle z-10 col-start-1 row-start-1 mt-60 ml-5 flex flex-col items-center justify-center self-end rounded-full border-2 border-white bg-grey/80 md:ml-10 lg:ml-20 xl:col-start-3 xl:row-start-2 xl:ml-0 xl:self-start"
         >
-          <a class="underline hover:text-red-600" href="#aboutMe">About me</a>
-          <a class="underline hover:text-red-600" href="#myProjects"
+          <a class="underline hover:text-purple" href="#aboutMe">About me</a>
+          <a class="underline hover:text-purple" href="#myProjects"
             >Selected Projects</a
           >
         </div>
       </section>
 
       <!---ABOUT ME-->
-      <section id="aboutMe" class="pt-15 overflow-hidden bg-purple xl:pt-24">
-        <!--banner-->
-        <div class="pt-10 text-7xl font-light text-green">
-          <div class="banner-inner whitespace-nowrap">
-            <span class="banner-copy-before"
-              >About me.&nbsp; About me.&nbsp; About me.&nbsp; About me. &nbsp;
+      <div class="relative z-20">
+        <section id="aboutMe" class="overflow-hidden pt-10 xl:pt-24">
+          <!--banner-->
+          <div class="text-7xl font-light text-green">
+            <div class="banner-inner whitespace-nowrap">
+              <span class="banner-copy-before"
+                >About me.&nbsp; About me.&nbsp; About me.&nbsp; About me.
+                &nbsp; About me. &nbsp; About me.
+              </span>
+              About me.&nbsp; About me.&nbsp; About me.&nbsp; About me. &nbsp;
               About me. &nbsp; About me.
-            </span>
-            About me.&nbsp; About me.&nbsp; About me.&nbsp; About me. &nbsp;
-            About me. &nbsp; About me.
-            <span class="banner-copy-after"
-              >About me.&nbsp; About me.&nbsp; About me.&nbsp; About me. &nbsp;
-              About me. &nbsp; About me.
-            </span>
+              <span class="banner-copy-after"
+                >About me.&nbsp; About me.&nbsp; About me.&nbsp; About me.
+                &nbsp; About me. &nbsp; About me.
+              </span>
+            </div>
           </div>
-        </div>
 
-        <article
-          class="px-12 pt-10 pb-16 text-white md:px-20 xl:grid xl:grid-cols-2 xl:py-24 xl:px-36 xxl:px-60"
-        >
-          <div class="border-2 border-white">
-            <p class="p-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-          </div>
-          <div
-            class="border-x-2 border-b-2 border-white xl:border-t-2 xl:border-l-0"
+          <article
+            class="px-12 pt-10 pb-16 text-white md:px-20 xl:grid xl:grid-cols-2 xl:py-24 xl:px-36 xxl:px-60"
           >
-            <div class="[&_p]:px-3 [&_p]:py-2">
-              <h3 class="border-b-2 border-white p-3 font-medium uppercase">
-                Competencies
-              </h3>
-              <div class="flex justify-between border-b-2 border-white text-sm">
-                <p class="">Creative web design</p>
+            <div class="border-2 border-white">
+              <p class="p-5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+            <div
+              class="border-x-2 border-b-2 border-white xl:border-t-2 xl:border-l-0"
+            >
+              <div class="[&_p]:px-3 [&_p]:py-2">
+                <h3
+                  class="border-b-2 border-white p-3 text-center font-medium uppercase"
+                >
+                  Competencies
+                </h3>
+                <div
+                  class="flex justify-between border-b-2 border-white text-sm"
+                >
+                  <p class="">Creative web design</p>
+                </div>
+                <div
+                  class="flex justify-between border-b-2 border-white text-sm"
+                >
+                  <p class="">Prototyping</p>
+                </div>
+                <div
+                  class="flex justify-between border-b-2 border-white text-sm"
+                >
+                  <p class="">Content creation</p>
+                </div>
+                <div
+                  class="flex justify-between border-b-2 border-white text-sm"
+                >
+                  <p class="">User research</p>
+                </div>
+                <div
+                  class="flex justify-between border-b-2 border-white text-sm"
+                >
+                  <p class="">User testing</p>
+                </div>
               </div>
-              <div class="flex justify-between border-b-2 border-white text-sm">
-                <p class="">Prototyping</p>
-              </div>
-              <div class="flex justify-between border-b-2 border-white text-sm">
-                <p class="">Content creation</p>
-              </div>
-              <div class="flex justify-between border-b-2 border-white text-sm">
-                <p class="">User research</p>
-              </div>
-              <div class="flex justify-between border-b-2 border-white text-sm">
-                <p class="">User testing</p>
+
+              <div class="grid grid-cols-2">
+                <div
+                  class="grid place-content-center border-r-2 border-white p-5"
+                >
+                  <a class="underline hover:text-green" href="#" target="_blank"
+                    >Download CV</a
+                  >
+                </div>
+
+                <div class="grid place-content-center p-5">
+                  <a
+                    class="underline hover:text-green"
+                    href="https://www.linkedin.com/in/evelina-falander/"
+                    target="_blank"
+                    >Linkedin</a
+                  >
+                </div>
               </div>
             </div>
-
-            <div class="grid grid-cols-2">
-              <div
-                class="grid place-content-center border-r-2 border-white p-5"
-              >
-                <a class="underline hover:text-green" href="#" target="_blank"
-                  >Download CV</a
-                >
-              </div>
-
-              <div class="grid place-content-center p-5">
+          </article>
+        </section>
+        <!---PROJECTS-->
+        <section id="myProjects" class="overflow-hidden bg-grey pt-12 xl:pt-24">
+          <!--banner-->
+          <div class="text-7xl font-light text-green">
+            <div class="banner-inner whitespace-nowrap">
+              <span class="banner-copy-before"
+                >Selected projects.&nbsp; Selected projects.&nbsp; Selected
+                projects.&nbsp; Selected projects.
+              </span>
+              Selected projects.&nbsp; Selected projects.&nbsp; Selected
+              projects.&nbsp; Selected projects.
+              <span class="banner-copy-after"
+                >Selected projects.&nbsp; Selected projects.&nbsp; Selected
+                projects.&nbsp; Selected projects.
+              </span>
+            </div>
+          </div>
+        </section>
+        <!--all projects-->
+        <section class="bg-grey px-12 md:px-20 xl:px-36">
+          <!--vildskud-->
+          <article class="reveal pt-12 xl:grid xl:grid-cols-2 xl:pt-24">
+            <div>
+              <img class="" src="img/vildskud1.webp" alt="vildskud website" />
+            </div>
+            <div class="xl:w-[350px] xl:pl-10">
+              <div class="border-b-2 border-white px-3 py-2">
                 <a
-                  class="underline hover:text-green"
-                  href="https://www.linkedin.com/in/evelina-falander/"
-                  target="_blank"
-                  >Linkedin</a
+                  class="underline hover:text-red-600"
+                  href="https://thordiskara.com/vildskud/index.html"
+                  target="blank"
                 >
+                  Vildskud - Sustainable digital solution
+                </a>
               </div>
+              <details class="border-b-2 border-white">
+                <summary class="px-3 py-2 hover:cursor-hovercursor">
+                  <span class="pl-2">Read More</span>
+                </summary>
+                <p class="px-7 py-2">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation
+                </p>
+              </details>
+
+              <details class="border-b-2 border-white">
+                <summary class="px-3 py-2 hover:cursor-hovercursor">
+                  <span class="pl-2">My Tasks</span>
+                </summary>
+                <p class="px-7 py-2">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation
+                </p>
+              </details>
             </div>
-          </div>
-        </article>
-      </section>
-      <!---PROJECTS-->
-      <section id="myProjects" class="overflow-hidden pt-10">
-        <!--banner-->
-        <div class="text-7xl font-light text-green">
-          <div class="banner-inner whitespace-nowrap">
-            <span class="banner-copy-before"
-              >Selected projects.&nbsp; Selected projects.&nbsp; Selected
-              projects.&nbsp; Selected projects.
-            </span>
-            Selected projects.&nbsp; Selected projects.&nbsp; Selected
-            projects.&nbsp; Selected projects.
-            <span class="banner-copy-after"
-              >Selected projects.&nbsp; Selected projects.&nbsp; Selected
-              projects.&nbsp; Selected projects.
-            </span>
-          </div>
-        </div>
-      </section>
-      <!--all projects-->
-      <section class="px-12 md:px-20 xl:px-36">
-        <!--vildskud-->
-        <article class="reveal pt-20 xl:grid xl:grid-cols-2 xl:pt-24">
-          <div>
-            <img class="" src="img/vildskud1.webp" alt="vildskud website" />
-          </div>
-          <div class="xl:w-[350px] xl:pl-10">
-            <div class="border-b-2 border-white px-3 py-2">
-              <a
-                class="underline hover:text-red-600"
-                href="https://thordiskara.com/vildskud/index.html"
-                target="blank"
-              >
-                Vildskud - Sustainable digital solution
-              </a>
+          </article>
+
+          <!--Portfolio-->
+
+          <article class="reveal pt-20 xl:grid xl:grid-cols-2 xl:pt-28">
+            <div class="xl:col-start-2">
+              <img
+                class=""
+                src="img/myportfolio.webp"
+                alt="portfolio website"
+              />
             </div>
-            <details class="border-b-2 border-white">
-              <summary class="px-3 py-2 hover:cursor-hovercursor">
-                <span class="pl-2">Read More</span>
-              </summary>
-              <p class="px-7 py-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation
-              </p>
-            </details>
+            <div
+              class="xl:row-start-1 xl:w-[350px] xl:justify-self-end xl:pr-10"
+            >
+              <div class="border-b-2 border-white px-3 py-2">
+                <a
+                  class="underline hover:text-red-600"
+                  href="https://evelinafalander.com/portfolio-exam/"
+                  target="blank"
+                >
+                  Personal Portfolio - Digital solution
+                </a>
+              </div>
+              <details class="border-b-2 border-white">
+                <summary class="px-3 py-2 hover:cursor-hovercursor">
+                  <span class="pl-2">Read More</span>
+                </summary>
+                <p class="px-7 py-2">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation
+                </p>
+              </details>
 
-            <details class="border-b-2 border-white">
-              <summary class="px-3 py-2 hover:cursor-hovercursor">
-                <span class="pl-2">My Tasks</span>
-              </summary>
-              <p class="px-7 py-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation
-              </p>
-            </details>
-          </div>
-        </article>
-
-        <!--Portfolio-->
-
-        <article class="reveal pt-20 xl:grid xl:grid-cols-2 xl:pt-28">
-          <div class="xl:col-start-2">
-            <img class="" src="img/myportfolio.webp" alt="portfolio website" />
-          </div>
-          <div class="xl:row-start-1 xl:w-[350px] xl:justify-self-end xl:pr-10">
-            <div class="border-b-2 border-white px-3 py-2">
-              <a
-                class="underline hover:text-red-600"
-                href="https://evelinafalander.com/portfolio-exam/"
-                target="blank"
-              >
-                Personal Portfolio - Digital solution
-              </a>
+              <details class="border-b-2 border-white">
+                <summary class="px-3 py-2 hover:cursor-hovercursor">
+                  <span class="pl-2">My Tasks</span>
+                </summary>
+                <p class="px-7 py-2">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation
+                </p>
+              </details>
             </div>
-            <details class="border-b-2 border-white">
-              <summary class="px-3 py-2 hover:cursor-hovercursor">
-                <span class="pl-2">Read More</span>
-              </summary>
-              <p class="px-7 py-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation
-              </p>
-            </details>
+          </article>
 
-            <details class="border-b-2 border-white">
-              <summary class="px-3 py-2 hover:cursor-hovercursor">
-                <span class="pl-2">My Tasks</span>
-              </summary>
-              <p class="px-7 py-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation
-              </p>
-            </details>
-          </div>
-        </article>
+          <!--Kreass-->
 
-        <!--Kreass-->
-
-        <article class="reveal pt-20 xl:grid xl:grid-cols-2 xl:pt-28">
-          <div>
-            <img class="" src="img/kreass2.webp" alt="kreass website" />
-          </div>
-          <div class="xl:w-[350px] xl:pl-10">
-            <div class="border-b-2 border-white px-3 py-2">
-              <a
-                class="underline hover:text-red-600"
-                href="https://evelinafalander.com/Kraess/"
-                target="blank"
-              >
-                Kreass - Digital solution
-              </a>
+          <article class="reveal pt-20 xl:grid xl:grid-cols-2 xl:pt-28">
+            <div>
+              <img class="" src="img/kreass2.webp" alt="kreass website" />
             </div>
-            <details class="border-b-2 border-white">
-              <summary class="px-3 py-2 hover:cursor-hovercursor">
-                <span class="pl-2">Read More</span>
-              </summary>
-              <p class="px-7 py-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation
-              </p>
-            </details>
+            <div class="xl:w-[350px] xl:pl-10">
+              <div class="border-b-2 border-white px-3 py-2">
+                <a
+                  class="underline hover:text-red-600"
+                  href="https://evelinafalander.com/Kraess/"
+                  target="blank"
+                >
+                  Kreass - Digital solution
+                </a>
+              </div>
+              <details class="border-b-2 border-white">
+                <summary class="px-3 py-2 hover:cursor-hovercursor">
+                  <span class="pl-2">Read More</span>
+                </summary>
+                <p class="px-7 py-2">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation
+                </p>
+              </details>
 
-            <details class="border-b-2 border-white">
-              <summary class="px-3 py-2 hover:cursor-hovercursor">
-                <span class="pl-2">My Tasks</span>
-              </summary>
-              <p class="px-7 py-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation
-              </p>
-            </details>
-          </div>
-        </article>
-
-        <!--Customise me-->
-
-        <article class="reveal pt-20 xl:grid xl:grid-cols-2 xl:pt-28">
-          <div class="col-start-2">
-            <img class="" src="img/soap.webp" alt="soap website" />
-          </div>
-          <div
-            class="xl:col-start-1 xl:row-start-1 xl:w-[350px] xl:justify-self-end xl:pr-10"
-          >
-            <div class="border-b-2 border-white px-3 py-2">
-              <a
-                class="underline hover:text-red-600"
-                href="https://linneavisser.github.io/CustomiseMe/index.html"
-                target="blank"
-              >
-                Customise Me - Digital solution
-              </a>
+              <details class="border-b-2 border-white">
+                <summary class="px-3 py-2 hover:cursor-hovercursor">
+                  <span class="pl-2">My Tasks</span>
+                </summary>
+                <p class="px-7 py-2">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation
+                </p>
+              </details>
             </div>
-            <details class="border-b-2 border-white">
-              <summary class="px-3 py-2 hover:cursor-hovercursor">
-                <span class="pl-2">Read More</span>
-              </summary>
-              <p class="px-7 py-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation
-              </p>
-            </details>
+          </article>
 
-            <details class="border-b-2 border-white">
-              <summary class="px-3 py-2 hover:cursor-hovercursor">
-                <span class="pl-2">My Tasks</span>
-              </summary>
-              <p class="px-7 py-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation
-              </p>
-            </details>
+          <!--Customise me-->
+
+          <article class="reveal pt-20 xl:grid xl:grid-cols-2 xl:pt-28">
+            <div class="col-start-2">
+              <img class="" src="img/soap.webp" alt="soap website" />
+            </div>
+            <div
+              class="xl:col-start-1 xl:row-start-1 xl:w-[350px] xl:justify-self-end xl:pr-10"
+            >
+              <div class="border-b-2 border-white px-3 py-2">
+                <a
+                  class="underline hover:text-red-600"
+                  href="https://linneavisser.github.io/CustomiseMe/index.html"
+                  target="blank"
+                >
+                  Customise Me - Digital solution
+                </a>
+              </div>
+              <details class="border-b-2 border-white">
+                <summary class="px-3 py-2 hover:cursor-hovercursor">
+                  <span class="pl-2">Read More</span>
+                </summary>
+                <p class="px-7 py-2">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation
+                </p>
+              </details>
+
+              <details class="border-b-2 border-white">
+                <summary class="px-3 py-2 hover:cursor-hovercursor">
+                  <span class="pl-2">My Tasks</span>
+                </summary>
+                <p class="px-7 py-2">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation
+                </p>
+              </details>
+            </div>
+          </article>
+        </section>
+        <!--last part-->
+        <section class="grid grid-cols-2 bg-grey pt-20 xl:text-lg">
+          <div class="border-r-2 border-white pr-2 text-end">
+            <p>Want to see more of my work?</p>
+            <a
+              class="underline hover:text-purple"
+              href="https://www.behance.net/evelinafalander"
+              target="_blank"
+              >check out my Behance
+            </a>
           </div>
-        </article>
-      </section>
-      <!--last part-->
-      <section class="grid grid-cols-2 pt-20 xl:text-lg">
-        <div class="border-r-2 border-white pr-2 text-end">
-          <p>Want to see more of my work?</p>
-          <a
-            class="underline hover:text-purple"
-            href="https://www.behance.net/evelinafalander"
-            target="_blank"
-            >check out my Behance
-          </a>
-        </div>
-        <p class="pt-20 pl-2 pr-4">
-          Don't hesitate to
-          <a
-            class="underline hover:text-purple"
-            href="mailto:evelina.falander@gmail.com"
-            target="_blank"
-            >contact
-          </a>
-          me with any questions!
-        </p>
-      </section>
+          <p class="pt-20 pl-2 pr-4">
+            Don't hesitate to
+            <a
+              class="underline hover:text-purple"
+              href="mailto:evelina.falander@gmail.com"
+              target="_blank"
+              >contact
+            </a>
+            me with any questions!
+          </p>
+        </section>
+      </div>
     </main>
     <footer class="pt-20">
       <p class="pb-2 text-center font-light">© Evelina Falander 2022</p>

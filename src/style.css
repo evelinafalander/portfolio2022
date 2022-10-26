@@ -23,7 +23,7 @@
   }*/
 
 .flip {
-  transform: rotate(-90deg);
+  transform: rotate(90deg);
 }
 
 .mymail {
@@ -43,6 +43,19 @@
     height: 300px;
     width: 300px;
   }
+}
+/*e-mail color change*/
+body {
+  background-color: #dcdcdc;
+}
+#aboutMe {
+  background-color: #654b96;
+}
+.dark-color {
+  color: #654b96;
+}
+.light-color {
+  color: #cdff7c;
 }
 
 /*BANNER*/
