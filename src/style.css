@@ -47,10 +47,14 @@ body {
 /*.mymail {
   animation: rotateMe 0.5s linear forwards;
 }*/
+
 /*e-mail color change*/
 
 #aboutMe {
   background-color: #654b96;
+}
+.changetoGreen {
+  color:#cdff7c;
 }
 
 /*.dark-color {
@@ -123,6 +127,8 @@ body {
 }
 
 /*ANIMATIONS*/
+
+
 @keyframes textclip {
   to {
     background-position: 200% center;

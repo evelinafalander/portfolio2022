@@ -20,37 +20,24 @@ function reveal() {
 window.addEventListener("scroll", reveal);
 reveal();
 
-/*change color (my-email)*/
+/////////*change color (my-email)*//////
 
-// Start midnight
-$(document).ready(function () {
-  // Change this to the correct selector for your nav.
-  $(".email").midnight();
+jQuery(document).ready(function($){
+  $(window).on('scroll', function(){
+      if($(window).scrollTop() >= $('#aboutMe').offset().top - 80){
+          $('.myEmail').addClass('changetoGreen');
+      }
+      else $('.myEmail').removeClass('changetoGreen');
+  });
 });
 
-// Start midnight
-
-/*$(document).ready(function () {
-  adaptColor(".myemail");
+jQuery(document).ready(function($){
+  $(window).on('scroll', function(){
+      if($(window).scrollTop() >= $('#myProjects').offset().top - 50){
+          $('.myEmail').removeClass('changetoGreen');
+      }
+      
+  });
 });
 
-function adaptColor(selector) {
-  var rgb = $(selector).css("background-color");
 
-  if (rgb.match(/^rgb/)) {
-    var a = rgb.match(
-        /^rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*(\d+(?:\.\d+)?))?\)$/
-      ),
-      r = a[1],
-      g = a[2],
-      b = a[3];
-  }
-  var hsp = Math.sqrt(0.299 * (r * r) + 0.587 * (g * g) + 0.114 * (b * b));
-  if (hsp > 127.5) {
-    $(selector).addClass("dark-color");
-  } else {
-    $(selector).addClass("light-color");
-
-  }
-}
-*/
