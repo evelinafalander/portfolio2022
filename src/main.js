@@ -22,22 +22,18 @@ reveal();
 
 /////////*change color (my-email)*//////
 
-jQuery(document).ready(function($){
-  $(window).on('scroll', function(){
-      if($(window).scrollTop() >= $('#aboutMe').offset().top - 80){
-          $('.myEmail').addClass('changetoGreen');
-      }
-      else $('.myEmail').removeClass('changetoGreen');
+jQuery(document).ready(function ($) {
+  $(window).on("scroll", function () {
+    if ($(window).scrollTop() >= $("#aboutMe").offset().top - 50) {
+      $(".myEmail").addClass("changetoGreen");
+    } else $(".myEmail").removeClass("changetoGreen");
   });
 });
 
-jQuery(document).ready(function($){
-  $(window).on('scroll', function(){
-      if($(window).scrollTop() >= $('#myProjects').offset().top - 50){
-          $('.myEmail').removeClass('changetoGreen');
-      }
-      
+jQuery(document).ready(function ($) {
+  $(window).on("scroll", function () {
+    if ($(window).scrollTop() >= $("#myProjects").offset().top - 50) {
+      $(".myEmail").removeClass("changetoGreen");
+    }
   });
 });
-
-

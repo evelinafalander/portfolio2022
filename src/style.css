@@ -54,7 +54,7 @@ body {
   background-color: #654b96;
 }
 .changetoGreen {
-  color:#cdff7c;
+  color: #cdff7c;
 }
 
 /*.dark-color {
@@ -80,10 +80,10 @@ body {
 .animate-charcter {
   background-image: linear-gradient(
     -225deg,
-    #654b96 0%,
-    #cdff7c 29%,
-    #853bd4 67%,
-    #cdff7c 100%
+    #5b4b96 0%,
+    #b952f9 39%,
+    #5bff4c 60%,
+    #ca37f7 100%
   );
   background-size: auto auto;
   background-clip: border-box;
@@ -91,7 +91,7 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 4s linear infinite;
+  animation: textclip 3s linear infinite;
   display: inline-block;
 }
 
@@ -127,7 +127,6 @@ body {
 }
 
 /*ANIMATIONS*/
-
 
 @keyframes textclip {
   to {
