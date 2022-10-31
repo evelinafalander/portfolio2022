@@ -24,7 +24,9 @@ html {
 body {
   background-color: #dcdcdc;
 }
-
+details[open] > summary > span {
+  color: #5b4b96;
+}
 /*.addFont {
     font-family: "orpheuspro", serif;
   
