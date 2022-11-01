@@ -29,7 +29,7 @@
     <header>
       <div
         id="myMail"
-        class="myEmail fixed top-[10px] right-[10px] z-30 text-right text-purple xl:right-[20px] xl:top-[10px] xl:text-lg"
+        class="myEmail fixed top-[10px] right-[10px] z-30 text-right text-purple hover:text-green xl:right-[20px] xl:top-[10px] xl:text-lg"
       >
         <a
           class="underline"
@@ -41,7 +41,7 @@
         <p>tel. +46 725127411</p>
       </div>
       <div
-        class="myEmail fixed top-[15px] left-[10px] z-30 text-right text-xs text-purple xl:top-[12px] xl:left-[20px] xl:text-base"
+        class="myEmail fixed top-[15px] left-[10px] z-30 text-right text-xs text-purple xl:top-[12px] xl:left-[20px] xl:text-lg"
       >
         Available for an
         <span class="animate-charcter">internship</span>
@@ -72,10 +72,17 @@
         <div
           class="cirkle z-10 col-start-1 row-start-1 mt-64 ml-5 flex flex-col items-center justify-center self-end rounded-full border-2 border-white bg-grey/80 xl:col-span-3 xl:col-start-2 xl:mt-48 xl:ml-72 xl:text-lg xxl:ml-96"
         >
-          <a class="underline hover:text-purple" href="#aboutMe">About me</a>
+          <a class="pt-10 underline hover:text-purple xl:pt-20" href="#aboutMe"
+            >About me</a
+          >
           <a class="underline hover:text-purple" href="#myProjects"
             >Selected Projects</a
           >
+          <img
+            class="h-[80px] pt-3 xl:h-[100px] xl:pt-6"
+            src="svg/down-arrow.svg"
+            alt="down arrow"
+          />
         </div>
       </section>
 
@@ -117,8 +124,7 @@
                 During my studies I have learned to design, develop, plan and
                 produce multimedia products including websites, videos and
                 social media content. I have worked with client based cases and
-                produced websites and content according to a brief. I base all
-                my projects on thorough user research as well as user testing.
+                produced websites and content according to a brief.
               </p>
               <p class="px-5 py-5">
                 With my education I hope to in the future work with digital
@@ -207,16 +213,8 @@
         <section class="bg-grey px-12 font-light md:px-20 xl:px-36">
           <!--vildskud-->
           <article class="reveal pt-12 xl:grid xl:grid-cols-2 xl:pt-24">
-            <div class="">
-              <a
-                href="https://thordiskara.com/vildskud/index.html"
-                target="_blank"
-              >
-                <img
-                  class="hover:opacity-40 hover:ease-in-out"
-                  src="img/vildskud.webp"
-                  alt="vildskud website"
-              /></a>
+            <div>
+              <img src="img/vildskud.webp" alt="vildskud website" />
             </div>
             <div class="xl:w-[420px] xl:pl-10">
               <div
@@ -225,7 +223,7 @@
                 Vildskud / Sustainable digital solution
               </div>
               <details class="border-b-2 border-white">
-                <summary class="px-3 py-2 hover:cursor-hovercursor">
+                <summary class="px-3 py-3 hover:cursor-hovercursor">
                   <span class="pl-2 hover:text-purple">Read More</span>
                 </summary>
                 <p class="pl-7 pb-2">
@@ -233,13 +231,17 @@
                 </p>
                 <p class="pb-2 pl-7">
                   During this group project we were tasked with creating an
-                  environmentally friendly, mobile first website by minimizing
-                  the site weight and the amount of code.
+                  environmentally friendly website, done by minimizing the site
+                  weight and the amount of code.
                 </p>
                 <p class="pl-7 pb-2">
                   While also optimizing the ux/ui design, in regards to finding
                   the festival program, finding the festival venues and how to
                   buy tickets.
+                </p>
+                <p class="py-2 pl-7">
+                  The site is optimized for mobile view, based on that this is
+                  where we found the target audience would look at the website.
                 </p>
                 <div class="flex gap-3 pl-7 pb-2 underline">
                   <a
@@ -253,7 +255,7 @@
               </details>
 
               <details class="border-b-2 border-white">
-                <summary class="px-3 py-2 hover:cursor-hovercursor">
+                <summary class="px-3 py-3 hover:cursor-hovercursor">
                   <span class="pl-2 hover:text-purple">My main tasks</span>
                 </summary>
                 <ul class="list-disc pl-7 pb-2">
@@ -283,7 +285,7 @@
                 Kræss / Digital solution, Videos, some guide & style guide
               </div>
               <details class="border-b-2 border-white">
-                <summary class="px-3 py-2 hover:cursor-hovercursor">
+                <summary class="px-3 py-3 hover:cursor-hovercursor">
                   <span class="pl-2 hover:text-purple">Read More</span>
                 </summary>
                 <p class="pl-7 pb-2">
@@ -322,7 +324,7 @@
               </details>
 
               <details class="border-b-2 border-white">
-                <summary class="px-3 py-2 hover:cursor-hovercursor">
+                <summary class="px-3 py-3 hover:cursor-hovercursor">
                   <span class="pl-2 hover:text-purple">My main Tasks</span>
                 </summary>
                 <ul class="list-disc pl-7 pb-2">
@@ -349,7 +351,7 @@
                 SILFEN / digital solution, Video & some guide
               </div>
               <details class="border-b-2 border-white">
-                <summary class="px-3 py-2 hover:cursor-hovercursor">
+                <summary class="px-3 py-3 hover:cursor-hovercursor">
                   <span class="pl-2 hover:text-purple">Read More</span>
                 </summary>
                 <p class="pl-7 pb-2">
@@ -368,7 +370,7 @@
                   focus on Silfens sustainability actions and a social media
                   strategy.
                 </p>
-                <div class="flex gap-3 pl-7 pb-2 underline">
+                <div class="flex gap-3 pl-7 pb-3 underline">
                   <a
                     class="underline hover:text-purple"
                     href=" https://linneavisser.github.io/website/sustainability.html"
@@ -386,7 +388,7 @@
               </details>
 
               <details class="border-b-2 border-white">
-                <summary class="px-3 py-2 hover:cursor-hovercursor">
+                <summary class="px-3 py-3 hover:cursor-hovercursor">
                   <span class="pl-2 hover:text-purple">My main tasks</span>
                 </summary>
                 <ul class="list-disc pl-7 pb-2">
@@ -412,7 +414,7 @@
               class="xl:col-start-1 xl:row-start-1 xl:w-[420px] xl:justify-self-end xl:pr-10"
             >
               <div
-                class="border-b-2 border-white px-3 py-2 font-medium uppercase"
+                class="border-b-2 border-white px-3 py-3 font-medium uppercase"
               >
                 Customise Me / Digital solution & style guide
               </div>
@@ -448,14 +450,15 @@
                   </a>
                   <a
                     class="underline hover:text-purple"
-                    href="https://www.figma.com/proto/jYxAlqQpUXOUx3pK2gstog/CustomiseMe?node-id=114%3A302&scaling=scale-down&page-id=0%3A1&starting-point-node-id=114%3A326&show-proto-sidebar=1 "
+                    href="https://www.figma.com/proto/jYxAlqQpUXOUx3pK2gstog/CustomiseMe?node-id=114%3A326&scaling=scale-down&page-id=0%3A1&starting-point-node-id=114%3A326&show-proto-sidebar=1"
+                    target="_blank"
                     >Prototype
                   </a>
                 </div>
               </details>
 
               <details class="border-b-2 border-white">
-                <summary class="px-3 py-2 hover:cursor-hovercursor">
+                <summary class="px-3 py-3 hover:cursor-hovercursor">
                   <span class="pl-2 hover:text-purple">My main tasks</span>
                 </summary>
                 <ul class="list-disc pl-7 pb-2">
@@ -483,13 +486,13 @@
                 Personal Portfolio / Digital solution
               </div>
               <details class="border-b-2 border-white">
-                <summary class="px-3 py-2 hover:cursor-hovercursor">
+                <summary class="px-3 py-3 hover:cursor-hovercursor">
                   <span class="pl-2 hover:text-purple">Read More</span>
                 </summary>
                 <p class="pl-7 pb-2">
                   This is my first portfolio website created for my first
-                  semester exam, with the task being to present my collected
-                  work during the first semester at the multimedia design
+                  semester exam, with the task being to present my self and my
+                  projects during the first semester at the multimedia design
                   program.
                 </p>
                 <p class="pl-7 pb-2">
