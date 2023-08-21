@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    font-family: "archivo", sen-serif;
+    font-family: "archivo", sans-serif;
   }
 }
 
@@ -22,8 +22,12 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: #dcdcdc;
+  cursor: none;
 }
+a:hover {
+  cursor: none;
+}
+
 details[open] > summary > span {
   color: #5b4b96;
 }
@@ -31,70 +35,20 @@ details[open] > summary > span {
     font-family: "orpheuspro", serif;
   
   }*/
-/*HERO SECTION*/
-.cirkle {
-  height: 200px;
-  width: 200px;
+/*CURSOR*/
+#cursor {
+  background-color: black;
+  border-radius: 25px;
+  height: 20px;
+  width: 20px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-@media screen and (min-width: 900px) {
-  .cirkle {
-    height: 350px;
-    width: 350px;
-  }
-}
-
-.flip {
-  transform: rotate(90deg);
-}
-/*.mymail {
-  animation: rotateMe 0.5s linear forwards;
-}*/
-
-/*e-mail color change*/
 
 #aboutMe {
-  background-color: #654b96;
-}
-.changetoGreen {
-  color: #cdff7c;
-}
-
-/*.dark-color {
-  color: #654b96;
-}
-.light-color {
-  color: #cdff7c;
-}
-.invertEmail {
-  mix-blend-mode: difference;
-}*/
-.midnightHeader.default {
-  color: #654b96;
-  top: 30px;
-  right: 50px;
-}
-.midnightHeader.greenText {
-  color: #cdff7c;
-  top: 30px;
-  right: 50px;
-}
-
-.animate-charcter {
-  background-image: linear-gradient(
-    -225deg,
-    #5b4b96 0%,
-    #b952f9 39%,
-    #5bff4c 60%,
-    #ca37f7 100%
-  );
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 3s linear infinite;
-  display: inline-block;
+  background-color: white;
 }
 
 /*BANNER*/
