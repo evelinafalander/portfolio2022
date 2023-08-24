@@ -19,9 +19,3 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
 reveal();
-
-//cursor
-const a = document.getElementById("cursor");
-document.addEventListener("mousemove", (t) => {
-  (a.style.top = t.pageY + "px"), (a.style.left = t.pageX + "px");
-});
